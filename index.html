@@ -6,6 +6,7 @@
     <title>Sai Akhil M C | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,6 +25,13 @@
             </nav>
         </div>
     </header>
+
+    <!-- 3D Visual Section -->
+    <section id="visual" class="section">
+        <div class="container">
+            <div id="3d-canvas"></div>
+        </div>
+    </section>
 
     <section id="about" class="section">
         <div class="container">
@@ -136,11 +144,56 @@
         <div class="container">
             <h2>Certifications</h2>
             <ul>
-                <li><a href="https://coursera.org/verify/2RQDMGRZXMR2" target="_blank">Essential Design Principles for Tableau - UCDAVIS</a></li>
-                <li><a href="https://coursera.org/verify/FE6WKFYB5AKV" target="_blank">Introduction to Data Analytics - IBM, Coursera</a></li>
-                <li><a href="https://coursera.org/verify/6MU2R2PG4FKQ" target="_blank">Fundamentals of Visualization with Tableau - UCDAVIS</a></li>
-                <li><a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS52S1323112604248376" target="_blank">Introduction to Industry 4.0 and Industrial Internet of Things, NPTEL</a></li>
-                <li><a href="https://coursera.org/verify/LRUKQHFUE4BX" target="_blank">SQL for Data Science</a></li>
+                <li><a href="https://coursera.org/verify/2RQDMGRZXMR2" target="_blank">Excel Skills for Business Specialization, Macquarie University</a></li>
+                <li><a href="https://coursera.org/verify/PAZHKAV5YZ6K" target="_blank">Data Visualization with Python, IBM</a></li>
+                <li><a href="https://coursera.org/verify/5VBHWJYQ29X9" target="_blank">Data Analysis with Python, IBM</a></li>
+                <li><a href="https://www.credly.com/badges/902f5b67-5de4-4ff1-bae3-f8c730f3b0cd?source=linked_in_profile" target="_blank">Data Science Foundations - Level 1, IBM</a></li>
+                <li><a href="https://coursera.org/verify/7SGLV9U2LD8N" target="_blank">Python Project for Data Science, IBM</a></li>
+                <li><a href="https://coursera.org/verify/K94B9DL85F9B" target="_blank">Data Science Methodology, IBM</a></li>
+                <li><a href="https://coursera.org/verify/QQCT9HLY8GLM" target="_blank">Tools for Data Science, IBM</a></li>
+                <li><a href="https://coursera.org/verify/JMCYAC9T7TLY" target="_blank">What is Data Science?, IBM</a></li>
+                <li><a href="https://coursera.org/verify/4M3FK9NVLBPS" target="_blank">Python for Data Science, AI & Development, IBM</a></li>
+                <li><a href="https://coursera.org/verify/B6UBH8ZK85CC" target="_blank">AI for Medicine Specialization, DeepLearning.AI</a></li>
+                <li><a href="https://coursera.org/verify/65JNNG9CNZ2R" target="_blank">Machine Learning with Python, IBM</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/FPG2AJNGSBCL" target="_blank">Applied Data Science with Python Specialization, University of Michigan</a></li>
+                <li><a href="https://coursera.org/verify/E88QW24Y3SZU" target="_blank">Deep Learning Specialization, DeepLearning.AI</a></li>
+                <li><a href="https://coursera.org/verify/RQXAWD3JPSHT" target="_blank">Python Data Structures, University of Michigan</a></li>
+                <li><a href="https://coursera.org/verify/YUNNTVHD9K53" target="_blank">Introduction to Cybersecurity Tools & Cyber Attacks, IBM</a></li>
+                <li><a href="https://coursera.org/verify/FAXRUQ8TAXRB" target="_blank">Foundations: Data, Data, Everywhere, Google</a></li>
+                <li><a href="https://coursera.org/verify/LFBDLC69C7ZT" target="_blank">AI For Everyone, DeepLearning.AI</a></li>
+                <li><a href="https://coursera.org/verify/E53FT9MM77BB" target="_blank">Intro to Self-Driving Cars, University of Toronto</a></li>
+                <li><a href="https://coursera.org/verify/9BZLE4BDQ57H" target="_blank">Introduction to Engineering Mechanics, Georgia Institute of Technology</a></li>
+                <li><a href="https://coursera.org/verify/MT99RXG9SV3P" target="_blank">Python Basics, University of Michigan</a></li>
+                <li><a href="https://coursera.org/verify/ZMSAA2APZ3L9" target="_blank">Mathematics for Machine Learning: Linear Algebra, Imperial College London</a></li>
+                <li><a href="https://coursera.org/verify/HEB5L4R5RNL5" target="_blank">Python Programming, University of Michigan</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/ZYT32FDF49KX" target="_blank">Mathematics for Machine Learning Specialization, Imperial College London</a></li>
+                <li><a href="https://coursera.org/verify/BX6EZUXEG26T" target="_blank">Mathematics for Machine Learning: Multivariate Calculus, Imperial College London</a></li>
+                <li><a href="https://coursera.org/verify/WQ92GFNCQQ98" target="_blank">Advanced Excel Formulas and Functions, Macquarie University</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/XP6XWYY5MNCR" target="_blank">Data Collection and Processing with Python, University of Michigan</a></li>
+                <li><a href="https://coursera.org/verify/LXUUU6F8J5D8" target="_blank">Introduction to Data Analytics for Business, University of Colorado Boulder</a></li>
+                <li><a href="https://www.credly.com/badges/ed52d2cf-519e-4df1-993e-50f607f9796a?source=linked_in_profile" target="_blank">DevOps Essentials, IBM</a></li>
+                <li><a href="https://coursera.org/verify/NFLTBUN2CG3C" target="_blank">Intermediate Machine Learning, Kaggle</a></li>
+                <li><a href="https://coursera.org/verify/MKXZCFTAF4WS" target="_blank">Getting Started with AWS Machine Learning, Amazon Web Services</a></li>
+                <li><a href="https://coursera.org/verify/ZDCRNU93BGS7" target="_blank">Excel/VBA for Creative Problem Solving, University of Colorado Boulder</a></li>
+                <li><a href="https://coursera.org/verify/J5EQ7RTS46F3" target="_blank">Financial Markets, Yale University</a></li>
+                <li><a href="https://coursera.org/verify/9R5U7M8MDL58" target="_blank">Data Visualization with Tableau, University of California, Davis</a></li>
+                <li><a href="https://coursera.org/verify/J5MTVC9S8UDQ" target="_blank">Data Science for Business, University of California, Davis</a></li>
+                <li><a href="https://coursera.org/verify/8BG65H6D2A9Y" target="_blank">Data Science Professional Certificate, IBM</a></li>
+                <li><a href="https://coursera.org/verify/87A6VGY8E9XK" target="_blank">Data Engineering Professional Certificate, IBM</a></li>
+                <li><a href="https://coursera.org/verify/JHSD8NS8C9NR" target="_blank">Business Analytics, University of Pennsylvania</a></li>
+                <li><a href="https://coursera.org/verify/BRLJYPG9DPL5" target="_blank">Introduction to Psychology, Yale University</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/Y8YV6BYEHL2T" target="_blank">Deep Learning for Business Specialization, Yonsei University</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/RTKMZD6C8Q49" target="_blank">Data Visualization and Communication with Tableau, Duke University</a></li>
+                <li><a href="https://coursera.org/verify/BHRXTD6X7Q99" target="_blank">Introduction to Cloud Computing, IBM</a></li>
+                <li><a href="https://coursera.org/verify/98M3XLMV7V9B" target="_blank">Google Cloud Fundamentals: Core Infrastructure, Google Cloud</a></li>
+                <li><a href="https://coursera.org/verify/5N3D9D9X4XWQ" target="_blank">AI for Everyone, Coursera Project Network</a></li>
+                <li><a href="https://coursera.org/verify/BTDLTG9N99QF" target="_blank">Machine Learning: Classification, University of Washington</a></li>
+                <li><a href="https://coursera.org/verify/WGR2PQZ8D3Y4" target="_blank">AI and Data Science for Healthcare, IBM</a></li>
+                <li><a href="https://coursera.org/verify/K5PRLNR9K9X4" target="_blank">Python for Everybody, University of Michigan</a></li>
+                <li><a href="https://coursera.org/verify/L7G9Z7J2Z9DZ" target="_blank">Data Science Capstone Project, IBM</a></li>
+                <li><a href="https://coursera.org/verify/P6C9L9E9G9T5" target="_blank">Data Science Methodology, IBM</a></li>
+                <li><a href="https://coursera.org/verify/R5Z8Z9L9D9X4" target="_blank">Introduction to Machine Learning in Production, Google Cloud</a></li>
+                <li><a href="https://coursera.org/verify/W8Z6Z5J9X9Y5" target="_blank">Data Science with Databricks for Data Analysts, Databricks</a></li>
             </ul>
         </div>
     </section>
@@ -148,12 +201,10 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Feel free to reach out for collaboration or opportunities.</p>
             <ul>
-                <li>Email: <a href="mailto:saiakhilmc2@gmail.com">saiakhilmc2@gmail.com</a></li>
-                <li>Phone: <a href="tel:+919740180677">+91 9740180677</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/sai-akhil-mc" target="_blank">www.linkedin.com/in/sai-akhil-mc</a></li>
-                <li>GitHub: <a href="https://github.com/SaiAkhilMC" target="_blank">github.com/SaiAkhilMC</a></li>
+                <li><strong>Email:</strong> <a href="mailto:saiakhil@example.com">saiakhil@example.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/saiakhilmc" target="_blank">linkedin.com/in/saiakhilmc</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/SaiAkhilMC" target="_blank">github.com/SaiAkhilMC</a></li>
             </ul>
         </div>
     </section>
